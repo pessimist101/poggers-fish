@@ -1,0 +1,6 @@
+name = "poggers-fish"
+type = "javascript"
+account_id = "16f878167337b62bfa3ff5e6dc43f924"
+workers_dev = true
+route = "poggers.fish/*"
+zone_id = ""

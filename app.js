@@ -4,6 +4,7 @@ let dvd;
 let r, g, b;
 let canvasWidth, canvasHeight;
 let imageWidth;
+let speed;
 
 function preload() {
     dvd = loadImage("https://cdn.discordapp.com/emojis/708709525879783443.gif?v=1")
@@ -13,11 +14,13 @@ function setup() {
     let canvasWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
     let canvasHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
     createCanvas(canvasWidth, canvasHeight);
-    // createCanvas(800,600);
-    x = random(width);
-    y = random(height);
-    xspeed = 7;
-    yspeed = 7;
+    // x = random(width);
+    // y = random(height);
+    x = dvd.height + 72;
+    y = dvd.height + 72;
+    speed = 7
+    xspeed = -speed;
+    yspeed = -speed;
     pickColour();
 }
 
@@ -34,20 +37,45 @@ function draw() {
         xspeed = -xspeed;
         x = width - dvd.width;
         pickColour();
+        edge(x,y,'x');
     } else if (x <= 0) {
         xspeed = -xspeed;
         x = 0;
         pickColour();
+        edge(x,y,'x');
     }
 
     if (y + dvd.height >= height) {
         yspeed = -yspeed;
         y = height - dvd.height;
         pickColour();
+        edge(x,y,'y');
     } else if (y <= 0) {
         yspeed = -yspeed;
         y = 0;
         pickColour();
+        edge(x,y,'y');
+    }
+}
+
+function edge(x, y, ignore) {
+    if (ignore == 'y') {
+        if (x + dvd.width >= width) {
+            x = width - dvd.width;
+            alert("IT HIT THE CORNER! POGGERS!!!");
+        } else if (x <= 0) {
+            x = 0;
+            alert("IT HIT THE CORNER! POGGERS!!!");
+        }
+    }
+    if (ignore == 'x') {
+        if (y + dvd.height >= height) {
+            y = height - dvd.height;
+            alert("IT HIT THE CORNER! POGGERS!!!");
+        } else if (y <= 0) {
+            y = 0;
+            alert("IT HIT THE CORNER! POGGERS!!!");
+        }
     }
 }
 

@@ -1,8 +1,8 @@
 html, body {
-  background-color: black;
+    background-color: coral;
     margin: 0;
     padding: 0;
-  }
-  canvas {
+}
+canvas {
     display: block;
-  }
+}

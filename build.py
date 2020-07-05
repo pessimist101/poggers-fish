@@ -1,6 +1,3 @@
-import re
-import time
-
 with open('./app/index.html','r') as f:
     html = f.read()
 

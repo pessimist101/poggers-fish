@@ -23,4 +23,4 @@ newHtml = insert_code(html,css,js,template)
 
 with open('index.js','w') as f:
     f.write(newHtml)
-
+    print('Generated index.js')

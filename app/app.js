@@ -14,10 +14,10 @@ function setup() {
     let canvasWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
     let canvasHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
     createCanvas(canvasWidth, canvasHeight);
-    // x = random(width);
-    // y = random(height);
-    x = dvd.height + 72;
-    y = dvd.height + 72;
+    x = random(width);
+    y = random(height);
+    // x = dvd.height + 72;
+    // y = dvd.height + 72;
     speed = 7
     xspeed = -speed;
     yspeed = -speed;

@@ -13,6 +13,9 @@ const someHTML = `<!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
+    <title>POGGERSFISH!</title>
+    <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/662107547972534305/728763624583331840/poggersfish.png"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
@@ -24,8 +27,6 @@ const someHTML = `<!DOCTYPE html>
 canvas {
     display: block;
 }</style>
-    <meta charset="utf-8" />
-
 </head>
 
 <body>

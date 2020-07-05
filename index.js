@@ -17,7 +17,7 @@ const someHTML = `<!DOCTYPE html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
     <style>html, body {
-    background-color: coral;
+    background-color: red;
     margin: 0;
     padding: 0;
 }

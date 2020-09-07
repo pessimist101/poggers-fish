@@ -14,6 +14,9 @@ const someHTML = `<!DOCTYPE html>
 
 <head>
     <meta charset="utf-8">
+    <meta property="og:title" content="Poggers Fish"/>
+    <meta property="og:description" content="Look at the fish, he is pogging!"/>
+    <meta property="og:image" content="https://cdn.discordapp.com/emojis/708709525879783443.gif?v=1"/>
     <title>POGGERSFISH!</title>
     <link rel="icon" type="image/png" href="https://media.discordapp.net/attachments/662107547972534305/728763624583331840/poggersfish.png"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
